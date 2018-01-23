@@ -48,11 +48,11 @@ export default {
 .nav-link {
     color: white;
     &:hover {
-        color: #8981fe;
+        color: #00b5a8;
     }
 }
 .nav-pills .nav-link.active{
-    background-color: #8981fe;
+    background-color: #00b5a8;
 }
 .settings-card .card-body {
   padding: 0;

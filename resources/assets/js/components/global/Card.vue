@@ -18,14 +18,15 @@ export default {
 }
 </script>
 <style lang="scss" scope>
-    .card {
-        color: white;
-        border-color: #717171;
-        background-color: #505050;
+.card{
+    box-shadow: 0px 3px 10px rgb(41, 45, 56);
+    color: #dce2ec;
+    border: 0;
+    background-color: #353c48;
+    .card-header{
+        color: #dce2ec;
+        border: 0;
+        background-color: #2f3540;
     }
-    .card-header {
-        color: #8980fe;
-        border-color: #717171;
-        background-color: #3A3A3A;
-    }
+}
 </style>

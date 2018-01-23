@@ -37,11 +37,14 @@ export default {
 </script>
 <style lang="scss">
     .list {
-        .fa-times {
-            color: #8980fe !important;
+        .fa-times{
+                font-size: 14px;
+                margin-top: 5px;
         }
         .list-group-item {
-            background-color: #696969 !important;
+            background-color: #303540 !important;
+            margin-bottom: 5px;
+            border-color: #2f333e;
         }
     }
     

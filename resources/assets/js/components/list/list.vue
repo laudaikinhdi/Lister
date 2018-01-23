@@ -8,7 +8,7 @@
                 </router-link>
             </li>
         </ul>
-        <form @submit.prevent="store" @keydown="form.onKeydown($event)">
+        <form @submit.prevent="store" @keydown="form.onKeydown($event)" class="form">
             <div class="row add">
                 <div class="col-md-8">
                     <div class="form-group">
@@ -69,4 +69,18 @@
     .add {
         margin-top: 10px;
     }
+    .card-body{
+       .nav-item{
+            border-bottom: 1px solid #444c58;
+            .fa-times{
+                font-size: 14px;
+                margin-top: 5px;
+            }
+       }
+       form.form{
+            margin-top: 30px;
+       }
+   }
+
+
 </style>

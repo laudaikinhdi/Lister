@@ -94,24 +94,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.navbar {
-    height: 70px;
-}
-.container {
-    max-width: 100%;
-}
 .navbar-nav {
     color: white;
-
     .nav-item {
         a.nav-link{
             color: white;
             font-weight: 400;
             &:hover {
-                color: #8980fe;
+                color: #00b5a8;
             }
             &.active{
-                color: #8980fe;
+                color: #00b5a8;
             }
         }
     }
@@ -120,7 +113,8 @@ export default {
     color: white;
 }
 .bg-darker {
-    background-color: #2F2F2F;
+    background-color: #353c48;
+    padding: 15px;
 }
 .profile-photo {
   width: 2rem;
