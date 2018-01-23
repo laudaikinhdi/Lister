@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-darker">
     <div class="container">
-      <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand">
+      <router-link :to="{ name: 'welcome' }" class="navbar-brand">
         {{ appName }}
       </router-link>
 

@@ -8,8 +8,12 @@
                 {{ $t('welcome_sub_title') }}
             </div>
 
-            <router-link :to="{ name: 'register' }" class="btn btn-primary btn-lg mt-5">
+            <router-link v-if="!user" :to="{ name: 'register' }" class="btn btn-primary btn-lg mt-5">
               {{ $t('register') }}
+            </router-link>
+
+            <router-link v-if="user" :to="{ name: 'lists' }" class="btn btn-primary btn-lg mt-5">
+              {{ $t('lists') }}
             </router-link>
         </div>
         <div class="background" id="particles-js"></div>
@@ -26,11 +30,16 @@ export default {
         return { title: this.$t('home') }
     },
 
+    computed: mapGetters({
+        user: 'auth/user'
+    }),
+
+
     mounted() {
         window.addEventListener('load', () => {
             setTimeout(() => {
                 this.loadParticles();
-            }, 300)
+            }, 500)
         })
     },
 

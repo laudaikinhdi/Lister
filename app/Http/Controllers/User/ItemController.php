@@ -35,6 +35,10 @@ class ItemController extends Controller
      */
     public function store(Request $request, $list)
     {
+        $request->validate([
+            'name' => 'required|min:3|max:150',
+        ]);
+
         return $request->user()
             ->listings()->where('id', $list)->firstOrFail()
             ->items()->create(['name' => $request->name]);

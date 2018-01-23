@@ -3,7 +3,6 @@ $config = [
     'appName' => config('app.name'),
     'locale' => $locale = app()->getLocale(),
     'locales' => config('app.locales'),
-    'githubAuth' => config('services.github.client_id'),
 ];
 
 $polyfills = [
@@ -31,13 +30,10 @@ $polyfills = [
 <body>
   <div id="app"></div>
 
-  {{-- Global configuration object --}}
   <script>window.config = @json($config);</script>
 
-  {{-- Polyfill JS features via polyfill.io --}}
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features={{ implode(',', $polyfills) }}"></script>
 
-  {{-- Load the application scripts --}}
   @if (app()->isLocal())
     <script src="{{ mix('js/app.js') }}"></script>
   @else
