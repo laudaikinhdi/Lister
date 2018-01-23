@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #212121;
+}
+.btn.btn-primary {
+    background-color: #212121;
+    border-color: #ffffff;
+
+    &:hover {
+        background-color: #867FF9;
+        border-color: #867FF9;
+    }
+}
+.form-control {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #a0a0a0 !important;
+    color: #ccc;
+    &:focus {
+        color: #ccc;
+        border-bottom: 2px solid #867FF9 !important;
+    }
+}
+
+.pointer { 
+    cursor: pointer;
+}
