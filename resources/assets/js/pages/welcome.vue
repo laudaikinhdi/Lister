@@ -186,7 +186,7 @@ export default {
     right: 0;
     color: white;
     position: absolute;
-    bottom: 50vh;
+    bottom: 35vh;
     
 }
 .title {

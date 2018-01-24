@@ -54,6 +54,5 @@ function middleware (middleware, routes) {
   routes.forEach(route =>
     (route.middleware || (route.middleware = [])).unshift(middleware)
   )
-
   return routes
 }
