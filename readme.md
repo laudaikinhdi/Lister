@@ -1,6 +1,6 @@
 # Lister
 
-THis is the demo code for the talk given at https://www.meetup.com/nl-NL/Laravel-Meetup-Groningen/events/245556289/
+This is the demo code for the talk given at https://www.meetup.com/nl-NL/Laravel-Meetup-Groningen/events/245556289/
 ### Installation
 ---
 * ```composer install```
